@@ -28,6 +28,7 @@ class manadzer_odwolan:
             return self.algorytmy.LFU(self.lista_odwolan[0:moment], self.pamięć)
         else:
             print("Algorytm ", self.algorytm, "nie jest wspierany!")
+            quit(-1)
 
     # def aktualizuj_licznik_odwolan(self, odwolanie):
     #     if not odwolanie in self.licznik_odwolan:

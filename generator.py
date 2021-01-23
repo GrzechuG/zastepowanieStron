@@ -5,6 +5,8 @@ import numpy.random as random
 import numpy as np
 from datetime import datetime
 
+global seed
+
 ##Funkcja odtwarzająca menu w konsoli
 def menu():
     algorytm = None
@@ -12,15 +14,18 @@ def menu():
     print("__MENU__")
     print("1. Wygeneruj dane testowe")
     print("2. Załaduj wygenerowane dane z pliku CSV")
+    print("3. Przeprować test na dużym zestawie dancyh")
 
     opcja = int(input("opcja>"))
     ilosc_ramek = int(input("ilosc ramek>"))
     if opcja == 1:
-
         ilosc_odwolan = int(input("Ile odwołań wygenerować? >"))
+        rozklad_odwolan_str = \
+            input("Czy rozkład odwołań ma być jednakowy (0,9), czy częściej mają być generowane ponownie ostatnie odwołania? J/O >")
 
+        rozklad_odwolan = rozkladyOdwolan.OSTATNI_CZESCIEJ if rozklad_odwolan_str == "O" else rozkladyOdwolan.NORMALNY
         try:
-            lista_odwolan = generuj_dane(ilosc_odwolan)
+            lista_odwolan = generuj_dane(ilosc_odwolan, rozklad_odwolan)
         except Exception as e:
             print("Wystąpił błąd podczas generowania odwołań!", e)
             quit(-1)
@@ -35,6 +40,12 @@ def menu():
             print("Wystąpił błąd podczas generowania odwołań!", e)
             quit(-1)
 
+    elif opcja == 3:
+        seed = int(input("Podaj seed:"))
+        setSeed(seed)
+
+
+        return [], [], "test"
 
     print("__MENU__")
     print("Jakiego algorytmu użyć?")
@@ -50,18 +61,37 @@ def menu():
     return lista_odwolan, ilosc_ramek, algorytm
 
 
+## Ustawia globalny seed na generator
+def setSeed(sd):
+    global seed
+    random.seed(sd)
+    seed = sd
+
+
+class rozkladyOdwolan:
+    NORMALNY=0
+    OSTATNI_CZESCIEJ=1
+
 ##Generator danych.
 # Zapisuje on dane automatycznie do pliku do folderu ./data
 # Nazwa odpowiada dacie oraz godzinie wykonania programu
-def generuj_dane(ilosc_odwolan):
+def generuj_dane(ilosc_odwolan, rozklad_odwolan=rozkladyOdwolan.NORMALNY, quiet=False):
     odwolania = []
-    teraz = datetime.now()
-    dt_string = teraz.strftime("%d-%m-%Y_%H:%M:%S")
-    export_file = open("data/odwolania_" + dt_string + ".csv", "a+")
+    if not quiet:
+        teraz = datetime.now()
+        dt_string = teraz.strftime("%d-%m-%Y_%H-%M-%S")
+        export_file = open("data/odwolania_" + dt_string + ".csv", "a+")
+
+
     for i in range(ilosc_odwolan):
-        odwolanie = random.randint(0,9)
+        # 5% prawdopodobieństwo, że wylosuje ponownie odwołanie to tego samego elementu co w 5 ostatnich odwolaniach.
+        if random.randint(0,100) < 40 and rozklad_odwolan == rozkladyOdwolan.OSTATNI_CZESCIEJ and len(odwolania)>2:
+            odwolanie = random.choice(odwolania[-3:len(odwolania)])
+        else:
+            odwolanie = random.randint(0,9)
         odwolania.append(odwolanie)
-        export_file.write(f"{odwolanie}\n")
+        if not quiet:
+            export_file.write(f"{odwolanie}\n")
     return odwolania
 
 

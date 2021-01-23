@@ -11,14 +11,13 @@ class algorytmy:
     ##Algorytm First In First Out
     def FIFO(self, ilosc_ramek):
         self.ostatni = (self.ostatni+1)%ilosc_ramek
-        print(self.ostatni)
         return self.ostatni
 
     ##Algorytm Least Frequently Used.
     #Jako argumenty należy podać listę odwołań do danego momentu oraz pamięć ramek.
     def LFU(self, lista_odwolan, pamięć):
 
-        print("Pamięć", pamięć)
+
         if pamięć:
             najrzadziej_używany = 0
             najmniejsza_ilosc_odwolan = lista_odwolan.count(pamięć[0])
@@ -26,7 +25,7 @@ class algorytmy:
                 ramka = pamięć[i]
 
                 ilosc_odwolan = lista_odwolan.count(ramka)
-                print(pamięć[i], "odwołania:", ilosc_odwolan)
+
                 if ilosc_odwolan < najmniejsza_ilosc_odwolan:
                     najmniejsza_ilosc_odwolan = ilosc_odwolan
                     najrzadziej_używany = i
