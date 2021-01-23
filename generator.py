@@ -6,9 +6,13 @@ import numpy as np
 from datetime import datetime
 
 global seed
+global prawdopodobienstwo_powtorzenia_poprzedniego_odwolania
+global replay_odwolan
 
 ##Funkcja odtwarzająca menu w konsoli
 def menu():
+    global prawdopodobienstwo_powtorzenia_poprzedniego_odwolania
+    global replay_odwolan
     algorytm = None
     lista_odwolan = []
     print("__MENU__")
@@ -42,6 +46,9 @@ def menu():
 
     elif opcja == 3:
         seed = int(input("Podaj seed:"))
+        prawdopodobienstwo_powtorzenia_poprzedniego_odwolania = int(input("Podaj prawdopodobienstwo powtarzania sie ostatnich odwolan 0-100 >:"))
+        replay_odwolan = \
+            int(input("Ile ostatnich odwolan ma być użytych? >:"))
         setSeed(seed)
 
 
@@ -75,7 +82,7 @@ class rozkladyOdwolan:
 ##Generator danych.
 # Zapisuje on dane automatycznie do pliku do folderu ./data
 # Nazwa odpowiada dacie oraz godzinie wykonania programu
-def generuj_dane(ilosc_odwolan, rozklad_odwolan=rozkladyOdwolan.NORMALNY, quiet=False):
+def generuj_dane(ilosc_odwolan, rozklad_odwolan=rozkladyOdwolan.NORMALNY, quiet=False, prawdop_powt_odwl=40, ostatnich=5):
     odwolania = []
     if not quiet:
         teraz = datetime.now()
@@ -85,8 +92,8 @@ def generuj_dane(ilosc_odwolan, rozklad_odwolan=rozkladyOdwolan.NORMALNY, quiet=
 
     for i in range(ilosc_odwolan):
         # 5% prawdopodobieństwo, że wylosuje ponownie odwołanie to tego samego elementu co w 5 ostatnich odwolaniach.
-        if random.randint(0,100) < 40 and rozklad_odwolan == rozkladyOdwolan.OSTATNI_CZESCIEJ and len(odwolania)>2:
-            odwolanie = random.choice(odwolania[-3:len(odwolania)])
+        if random.randint(0,100) <= prawdop_powt_odwl and rozklad_odwolan == rozkladyOdwolan.OSTATNI_CZESCIEJ and len(odwolania)>2:
+            odwolanie = random.choice(odwolania[-ostatnich:len(odwolania)])
         else:
             odwolanie = random.randint(0,9)
         odwolania.append(odwolanie)

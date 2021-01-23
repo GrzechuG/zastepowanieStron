@@ -16,8 +16,6 @@ class algorytmy:
     ##Algorytm Least Frequently Used.
     #Jako argumenty należy podać listę odwołań do danego momentu oraz pamięć ramek.
     def LFU(self, lista_odwolan, pamięć):
-
-
         if pamięć:
             najrzadziej_używany = 0
             najmniejsza_ilosc_odwolan = lista_odwolan.count(pamięć[0])

@@ -32,14 +32,26 @@ def test_na_duzym_zestawie_dancyh():
     ilosc_ramek = 4
     for i in range(100):
         record = []
-        lista_odwolan = gen.generuj_dane(100, rozklad_odwolan=gen.rozkladyOdwolan.NORMALNY, quiet=True)
+        lista_odwolan = gen.generuj_dane(
+            100,
+            rozklad_odwolan=gen.rozkladyOdwolan.NORMALNY,
+            quiet=True,
+            prawdop_powt_odwl=0)
+
         manadzerFIFO = manadzer_odwolan(copy.deepcopy(lista_odwolan), ilosc_ramek, "FIFO")
         manadzerLFU = manadzer_odwolan(copy.deepcopy(lista_odwolan), ilosc_ramek, "LFU")
         chybaieniaFIFO, trafieniaFIFO = manadzerFIFO.symulacja()
         chybaieniaLFU, trafieniaLFU = manadzerLFU.symulacja()
         record+=[chybaieniaFIFO, trafieniaFIFO, chybaieniaLFU, trafieniaLFU]
 
-        lista_odwolan = gen.generuj_dane(100, rozklad_odwolan=gen.rozkladyOdwolan.OSTATNI_CZESCIEJ, quiet=True)
+        lista_odwolan = gen.generuj_dane(
+            100,
+            rozklad_odwolan=gen.rozkladyOdwolan.OSTATNI_CZESCIEJ,
+            quiet=True,
+            prawdop_powt_odwl=gen.prawdopodobienstwo_powtorzenia_poprzedniego_odwolania,
+            ostatnich=gen.replay_odwolan
+        )
+
         manadzerFIFO = manadzer_odwolan(copy.deepcopy(lista_odwolan), ilosc_ramek, "FIFO")
         manadzerLFU = manadzer_odwolan(copy.deepcopy(lista_odwolan), ilosc_ramek, "LFU")
         chybaieniaFIFO, trafieniaFIFO = manadzerFIFO.symulacja()
