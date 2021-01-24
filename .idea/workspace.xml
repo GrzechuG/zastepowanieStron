@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84de4d3f-5eb4-4434-b266-e44603b1b368" name="Default Changelist" comment="" />
+    <list default="true" id="84de4d3f-5eb4-4434-b266-e44603b1b368" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/namespacegenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/namespacegenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/namespacemain.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/namespacemain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/namespacemembers.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/namespacemembers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/namespacemembers_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/namespacemembers_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/classes_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/classes_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/classes_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/classes_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/classes_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/namespaces_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/latex/namespacegenerator.tex" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/latex/namespacegenerator.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/latex/namespacemain.tex" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/latex/namespacemain.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dokumentacja/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/dokumentacja/latex/refman.tex" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="132">
               <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
             </state>
           </provider>
@@ -30,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zastepowanie_stron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            <state relative-caret-position="22">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -39,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wybor_ramki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="22">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -78,9 +111,9 @@
       <list>
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/text_formatting.py" />
-        <option value="$PROJECT_DIR$/zastepowanie_stron.py" />
         <option value="$PROJECT_DIR$/wybor_ramki.py" />
         <option value="$PROJECT_DIR$/generator.py" />
+        <option value="$PROJECT_DIR$/zastepowanie_stron.py" />
       </list>
     </option>
   </component>
@@ -175,19 +208,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="843" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1889664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18715084" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46002805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25385696" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25385696" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -228,17 +262,17 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zastepowanie_stron.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1430">
           <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -249,17 +283,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/zastepowanie_stron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="22">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wybor_ramki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="22">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
