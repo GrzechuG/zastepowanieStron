@@ -30,12 +30,6 @@ class manadzer_odwolan:
             print("Algorytm ", self.algorytm, "nie jest wspierany!")
             quit(-1)
 
-    # def aktualizuj_licznik_odwolan(self, odwolanie):
-    #     if not odwolanie in self.licznik_odwolan:
-    #         self.licznik_odwolan[odwolanie] = 1
-    #     else:
-    #         self.licznik_odwolan[odwolanie] += 1
-
     ##Funckja, która podmienia odpowiednią ramkę w pamięci
     def dodaj_do_pamięci(self, ramka, odwolanie):
         self.pamięć[ramka] = odwolanie
